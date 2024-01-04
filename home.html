@@ -1,0 +1,58 @@
+<html>
+    <title>???</title> <!---
+    i am going insane trying to add 3 background images
+    
+    please help me
+    
+-->
+    <link rel="icon" type="image/x-icon" href="img/Icon.png">
+<link rel="stylesheet" href="styles.css">
+    <link rel="script" href="crt.js">
+    <?php
+  $bg = array('img/colors.gif', 'img/static-distort.gif' ); // array of filenames
+
+  $i = rand(0, count($bg)-1); // generate random number size of the array
+  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
+?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style type="text/css">
+<!--
+body{
+background: url(images/<?php echo $selectedBg; ?>) no-repeat;
+}
+-->
+</style>
+    <script>
+        sliderDiv.innerHTML = html;
+
+    let tl = gsap.timeline({
+      delay: 2,
+      // when the whole timeline is done, empty out the sliderDiv
+      onComplete: () => fadecol.innerHTML = ""
+    });
+    tl.to(".odd, .even", {
+      x: (i) => i % 2 ? -window.innerWidth : window.innerWidth,
+      duration: 2,
+      stagger: 0.2
+    });
+        $('.fadecol').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $(this).remove(); });</script>
+    <div class="loader">
+  <span class="loader__element"></span>
+  <span class="loader__element"></span>
+  <span class="loader__element"></span>
+</div>
+<li><div class="Logo"><img src="img/Logo.png"></div>
+    <li><div class="Short"><img src="img/short.png"></div>
+        
+
+    <li><center><div class="fadecol">><img src="img/images.png" width="4000" 
+     height="5000" style="position:fixed; top:-20px; right:0;"></div></center>
+        <audio autoplay>
+  <source src="aud/bg.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+       
+        <div class="playlist" id="overlay" style="background-image: url('img/crt.png');"></div>
+    <html>
+
+
