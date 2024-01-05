@@ -97,6 +97,7 @@ animation: fadeInAnimation ease 3s;
     100% {
         opacity: 0;
         z-index: -1;
+        transform: translate(-10000px, -1000px);
      }
 }
 
