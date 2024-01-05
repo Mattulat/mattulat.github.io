@@ -66,7 +66,7 @@ position:fixed;
          then "move" it half its width/height to the
          top/left by using negative margins
      */
-     margin-left: -185px;
+     margin-left: -123px;
      margin-top:  -80px;
   animation-name: glitch2;
   animation-duration: 1s;
