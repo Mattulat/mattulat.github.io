@@ -67,7 +67,7 @@ position:fixed;
          top/left by using negative margins
      */
      margin-left: -123px;
-     margin-top:  -80px;
+     margin-top:  -20px;
   animation-name: glitch2;
   animation-duration: 1s;
   animation-iteration-count: infinite;
