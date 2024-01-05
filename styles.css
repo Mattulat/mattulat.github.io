@@ -59,7 +59,7 @@ position:fixed;
 .Playlist {
     position:fixed;
      left: 50%;
-     top:  100%;
+     top:  70%;
      /*
          if, for instance, the image is 64x64 pixels,
          then "move" it half its width/height to the
