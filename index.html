@@ -8,20 +8,7 @@
     <link rel="icon" type="image/x-icon" href="img/Icon.png">
 <link rel="stylesheet" href="styles.css">
     <link rel="script" href="crt.js">
-    <?php
-  $bg = array('img/colors.gif', 'img/static-distort.gif' ); // array of filenames
-
-  $i = rand(0, count($bg)-1); // generate random number size of the array
-  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
-?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <style type="text/css">
-<!--
-body{
-background: url(images/<?php echo $selectedBg; ?>) no-repeat;
-}
--->
-</style>
+    
     <script>
         sliderDiv.innerHTML = html;
 
