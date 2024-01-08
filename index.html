@@ -8,21 +8,7 @@
     <link rel="icon" type="image/x-icon" href="img/Icon.png">
 <link rel="stylesheet" href="styles.css">
     <link rel="script" href="crt.js">
-    
-    <script>
-        sliderDiv.innerHTML = html;
 
-    let tl = gsap.timeline({
-      delay: 2,
-      // when the whole timeline is done, empty out the sliderDiv
-      onComplete: () => fadecol.innerHTML = ""
-    });
-    tl.to(".odd, .even", {
-      x: (i) => i % 2 ? -window.innerWidth : window.innerWidth,
-      duration: 2,
-      stagger: 0.2
-    });
-        $('.fadecol').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $(this).remove(); });</script>
     <div class="loader">
   <span class="loader__element"></span>
   <span class="loader__element"></span>
