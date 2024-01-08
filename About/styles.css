@@ -1,0 +1,306 @@
+body {
+  letter-spacing: 0.125em;
+         animation-duration: 0.01s;
+         animation-name: textflicker;
+         animation-iteration-count: infinite;
+         animation-direction: alternate;
+  background-image: url('img/vignette.png'), url('img/crt.png'), url("img/colors.gif");
+  background-size: cover, cover, cover;
+    overflow: hidden; /* Hide scrollbars */
+}
+video {
+position:fixed;
+     left: 50%;
+     top:  50%;
+     /*
+         if, for instance, the image is 64x64 pixels,
+         then "move" it half its width/height to the
+         top/left by using negative margins
+     */
+     margin-left: -160px;
+     margin-top:  50px;
+}
+.Logo {
+    position:fixed;
+     left: 50%;
+     top:  25%;
+     /*
+         if, for instance, the image is 64x64 pixels,
+         then "move" it half its width/height to the
+         top/left by using negative margins
+     */
+     margin-left: -501px;
+     margin-top:  -62px;
+  animation-name: glitch2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+      animation-name: glitch1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.Short {
+    position:fixed;
+     left: 50%;
+     top:  40%;
+     /*
+         if, for instance, the image is 64x64 pixels,
+         then "move" it half its width/height to the
+         top/left by using negative margins
+     */
+     margin-left: -185px;
+     margin-top:  -62px;
+  animation-name: glitch2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+      animation-name: glitch1;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+.Playlist {
+    position:fixed;
+     left: 50%;
+     top:  70%;
+     /*
+         if, for instance, the image is 64x64 pixels,
+         then "move" it half its width/height to the
+         top/left by using negative margins
+     */
+     margin-left: -123px;
+     margin-top:  -20px;
+
+}
+.fadecol {
+animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: 10000px;
+  height: auto;
+    }
+
+/*
+   keyframe shit lmao
+*/
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+        transform: translate(-10000px, -1000px);
+     }
+}
+
+@keyframes glitch1 {
+  0% {
+    transform: none;
+  }
+  7% {
+    transform: skew(-1deg, -2deg);
+  }
+  10% {
+    transform: none;
+  }
+  27% {
+    transform: none;
+  }
+  30% {
+    transform: skew(1deg, -4deg);
+
+  }
+  35% {
+    transform: none;
+  }
+  52% {
+    transform: none;
+  }
+  55% {
+    transform: skew(-1deg, 8deg);
+  }
+  50% {
+    transform: none;
+  }
+  72% {
+    transform: none;
+  }
+  75% {
+    transform: skew(1deg, 4deg);
+  }
+  80% {
+    transform: none;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes glitch2 {
+  0% {
+    transform: none;
+    opacity: 0.75;
+  }
+  7% {
+    transform: translate(-2px, -3px);
+    opacity: 1;
+  }
+  10% {
+    transform: none;
+    opacity: 0.75;
+  }
+  27% {
+    transform: none;
+    opacity: 0.75;
+  }
+  30% {
+    transform: translate(-5px, -2px);
+    opacity: 1;
+  }
+  35% {
+    transform: none;
+    opacity: 0.75;
+  }
+  52% {
+    transform: none;
+    opacity: 0.75;
+  }
+  55% {
+    transform: translate(-5px, -1px);
+    opacity: 1;
+  }
+  50% {
+    transform: none;
+    opacity: 0.75;
+  }
+  72% {
+    transform: none;
+    opacity: 0.75;
+  }
+  75% {
+    transform: translate(-2px, -6px);
+    opacity: 1;
+  }
+  80% {
+    transform: none;
+    opacity: 0.75;
+  }
+  100% {
+    transform: none;
+    opacity: 0.75;
+  }
+}
+
+@keyframes glitch3 {
+  0% {
+    transform: none;
+    opacity: 0.5;
+  }
+  7% {
+    transform: translate(2px, 3px);
+    opacity: 1;
+  }
+  10% {
+    transform: none;
+    opacity: 0.75;
+  }
+  27% {
+    transform: none;
+    opacity: 0.75;
+  }
+  30% {
+    transform: translate(5px, 2px);
+    opacity: 1;
+  }
+  35% {
+    transform: none;
+    opacity: 0.75;
+  }
+  52% {
+    transform: none;
+    opacity: 0.75;
+  }
+  55% {
+    transform: translate(5px, 1px);
+    opacity: 1;
+  }
+  50% {
+    transform: none;
+    opacity: 0.75;
+  }
+  72% {
+    transform: none;
+    opacity: 0.75;
+  }
+  75% {
+    transform: translate(2px, 6px);
+    opacity: 1;
+  }
+  80% {
+    transform: none;
+    opacity: 0.75;
+  }
+  100% {
+    transform: none;
+    opacity: 0.75;
+  }
+}
+.loader {
+  background-color: var(--main-color);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center; 
+  justify-content: center;  
+  z-index: 100000;
+}
+
+.loader__element {
+  border-radius: 100%;
+  border: var(--size) solid var(--point-color);
+  margin: calc(var(--size)*2);
+}
+
+.loader__element:nth-child(1) {
+  animation: preloader .6s ease-in-out alternate infinite;
+}
+.loader__element:nth-child(2) {
+  animation: preloader .6s ease-in-out alternate .2s infinite;
+}
+
+.loader__element:nth-child(3) {
+  animation: preloader .6s ease-in-out alternate .4s infinite;
+}
+
+@keyframes preloader {
+  100% { transform: scale(2); }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+      body {
+          margin-left: 5em;
+          margin-right: 5em;
+      }
+  }
+  
+  @keyframes textflicker {
+    from {
+      text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+      text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+  }
