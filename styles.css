@@ -5,7 +5,7 @@ body {
          animation-iteration-count: infinite;
          animation-direction: alternate;
   background-image: url('img/vignette.png'), url('img/crt.png'), url("img/colors.gif");
-  background-size: cover, cover, cover;
+  background-size: contain, contain, contain;
     overflow: hidden; /* Hide scrollbars */
 }
 video {
