@@ -7,6 +7,7 @@ body {
   background-image: url('img/vignette.png'), url('img/crt.png'), url("img/colors.gif");
   background-size: contain, contain, contain;
   background-position: center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
     overflow: hidden; /* Hide scrollbars */
 }
 video {
