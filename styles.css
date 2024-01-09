@@ -4,6 +4,7 @@ body {
          animation-name: textflicker;
          animation-iteration-count: infinite;
          animation-direction: alternate;
+  background-color: black;
   background-image: url('img/vignette.png'), url('img/crt.png'), url("img/colors.gif");
   background-size: contain, contain, contain;
   background-position: center, center, center;
