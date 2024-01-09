@@ -6,6 +6,7 @@ body {
          animation-direction: alternate;
   background-image: url('img/vignette.png'), url('img/crt.png'), url("img/colors.gif");
   background-size: contain, contain, contain;
+  background-position: center, center, center;
     overflow: hidden; /* Hide scrollbars */
 }
 video {
